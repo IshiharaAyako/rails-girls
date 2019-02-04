@@ -1,0 +1,15 @@
+current directory: /Users/a.ishihara/rails-girls/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/Users/a.ishihara/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20190204-85403-1c9pk98.rb extconf.rb
+creating Makefile
+
+current directory: /Users/a.ishihara/rails-girls/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/a.ishihara/rails-girls/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/a.ishihara/rails-girls/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20190204-85403-zs4ijk/bindex

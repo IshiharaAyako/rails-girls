@@ -1,0 +1,15 @@
+current directory: /Users/a.ishihara/rails-girls/vendor/bundle/gems/bootsnap-1.3.2/ext/bootsnap
+/Users/a.ishihara/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20190204-85403-1f4c9b0.rb extconf.rb
+creating Makefile
+
+current directory: /Users/a.ishihara/rails-girls/vendor/bundle/gems/bootsnap-1.3.2/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/a.ishihara/rails-girls/vendor/bundle/gems/bootsnap-1.3.2/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/a.ishihara/rails-girls/vendor/bundle/gems/bootsnap-1.3.2/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20190204-85403-1qhb5gi/bootsnap
