@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :ideas
   # rootメソッドを使用することで、Railsがルート'/'とすべき場所を指定できる
   root to: redirect('/ideas')
+
+  get 'about', to: 'pages#about'
 end
