@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  # get 'pages/info'
-  get 'pages/info/', to: 'pages#info'
+  get 'profile', to: 'pages#info'
 
   # 特定のコントローラ内アクションにマッピングさせるようルーターに要求している
   resources :ideas
