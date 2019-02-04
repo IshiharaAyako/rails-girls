@@ -2,7 +2,7 @@
 
 <h1>Ideas</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -17,11 +17,10 @@
       <tr>
         <td><%= idea.name %></td>
         <td><%= idea.description %></td>
-        <td><%= truncate(idea.picture.to_s, length: 50) %></td>
+        <td><%= image_tag(idea.picture_url, width: 300) if idea.picture.present? %></td>
         <td><%= link_to 'Show', idea %></td>
         <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
         <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><button type="button" class="btn btn-info">love</button></td>
       </tr>
     <% end %>
   </tbody>
