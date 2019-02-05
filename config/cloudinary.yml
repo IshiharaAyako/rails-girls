@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hnosex56x
+  api_key: '583368472268453'
+  api_secret: d64IflnGiyvCkvv3ITK7kb_b79M
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: hnosex56x
+  api_key: '583368472268453'
+  api_secret: d64IflnGiyvCkvv3ITK7kb_b79M
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: hnosex56x
+  api_key: '583368472268453'
+  api_secret: d64IflnGiyvCkvv3ITK7kb_b79M
+  enhance_image_tag: true
+  static_file_support: false
