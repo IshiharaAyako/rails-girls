@@ -1,5 +1,5 @@
 body {
-    padding-top: 80px;
+    /* padding-top: 80px; */
     /* Flexbox コンテナの高さをブラウザの高さにする */
     height: 100vh;
     /* Flexbox 使用 */
@@ -8,15 +8,36 @@ body {
     flex-direction: column;
     /* 上下の隙間をなくす */
     justify-content: space-between;
+    background-color: #abbcac;
 }
 
-footer {
-    margin-top: 100px;
-    background-color: #ebebeb;
-    padding: 30px 0;
+header {
+    height: 100px;
+    background-color: #ab0cac;
 }
 
-table, td, th {
+ul {
+    list-style: none;
+    display:flex;
+}
+
+body,ul,li{
+    margin:0px;
+    padding:0px;
+}
+
+.active {
+    padding:10px 30px;
+    margin:2.5px;
+
+    background-color: rgba(135, 206, 235,1);
+    border-radius: 5px;
+
+    text-align: center;
+    color:white;
+}
+
+/* table, td, th {
     vertical-align: middle; border: none;
 }
 
@@ -38,4 +59,9 @@ a {
 a:hover {
     background: #00bcd4;
     color: white;
+} */
+
+footer {
+    background-color: #ebebeb;
+    padding: 30px 0;
 }
