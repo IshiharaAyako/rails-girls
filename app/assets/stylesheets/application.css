@@ -1,47 +1,118 @@
 body {
-    /* padding-top: 80px; */
-    /* Flexbox コンテナの高さをブラウザの高さにする */
-    height: 100vh;
-    /* Flexbox 使用 */
-    display: flex;
-    /* 並びを縦に */
-    flex-direction: column;
-    /* 上下の隙間をなくす */
-    justify-content: space-between;
-    background-color: #abbcac;
+    /* 游明朝体 */
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    font-size: 16px;
+    color: #4d4d4d;
+    background-color: #f9f9f9;
 }
 
-header {
-    height: 100px;
-    background-color: #ffffef;
+.wrap {
+    min-width: 900px;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+.header {
+    /* 中央揃え */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 300px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #808080;
+    overflow: hidden;
+}
+
+.header-nav {
+    margin: 0;
+    padding: 0;
 }
 
 ul {
-    list-style: none;
     display:flex;
+    list-style: none;
+    width: 100%;
 }
 
-body,ul,li{
-    margin:0px;
-    padding:0px;
+.header-logo {
+    width: 180px;
+    height: 171px;
 }
 
-.active {
-    padding:10px 30px;
-    margin:0.5px;
-    background-color: #fff0a0;
-    border-right: 1px solid #f00;
+.header-nav li {
+    width: 20%;
+    height: 100%;
+    border-left: 1px solid #808080;
+    margin: 40px 0;
+    padding:40px 45px;
+}
+
+li.nav{
+    border-left: none;
+}
+
+.header-nav a {
+    /* 文字の中央揃え */
+    justify-content: center;
+    align-items: center;
+
+    /* 文字を横並びに */
+    flex-direction: column;
+
+    height: 100px;
     text-align: center;
-    color: white;
+    text-decoration: none;
+    line-height: 1;
+    display: block;
+    color: #4d4d4d;
 }
 
-.active:hover {
-    background: #00bcd4;
-    color: white;
-
+p {
+    /* 中央揃え */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer {
-    background-color: #ebebeb;
-    padding: 30px 0;
+p .logo {
+    width: 180px;
+    height: 171px;
+    background-position: 0 0;
+}
+
+.header-nav span{
+    display: block;
+    margin-top: 30px;
+    font-size: 0.765em;
+    padding: 0 10% 20px 10%;
+}
+
+.header-nav span:hover{
+    border-bottom: 4px double #feac0e;
+    /* border-bottom: 4px double #808080; */
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 40px 0;
+}
+
+.img{
+    width: 100%;
+}
+
+.footer {
+    /* 文字上下中央 */
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+    padding: 15px 0 30px 20px;
+    font-size: 14px;
+    border-top: 1px solid #808080;
 }

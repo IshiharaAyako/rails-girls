@@ -12,25 +12,23 @@
 </head>
 
 <body>
-  <header>
-      <div>
-        <ul>
-          <li class="active"><%= link_to 'The Idea app', '/' %></li>
-          <li class="active"><%= link_to 'About', '/about' %></li>
-          <li class="active"><%= link_to 'Profile', '/profile' %></li>
-          <li class="active"><%= link_to 'Ideas', '/ideas' %></li>
-          <li class="active"><%= link_to 'New Idea', new_idea_path %></li>
-        </ul>
-      </div>
-  </header>
-  <div class="container">
-    <%= yield %>
-  </div>
-  <footer>
+  <div class="wrap">
+    <div class="header">
+       <ul class="header-nav">
+        <li class="nav"><%= link_to '/' do %>研究について<span>About</span><% end %></li>
+        <li><%= link_to '/' do %>仏具の紹介<span>Products</span><% end %></li>
+        <p><img src="/buddha.png" class="logo"></p>
+        <li class="nav"><%= link_to '/' do %>研究活動<span>Activities</span><% end %></li>
+        <li><%= link_to '/' do %>暮らし<span>Daily life</span><% end %></li>
+      </ul>
+    </div>
     <div class="container">
+      <img src="/flower_image.jpg" class="img">
+    </div>
+    <div class="footer">
       Rails Girls 2018
     </div>
-  </footer>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
