@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   # 特定のコントローラ内アクションにマッピングさせるようルーターに要求している
   resources :ideas
+
+  get 'design', to: 'pages#design'
 end
